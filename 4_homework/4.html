@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4</title>
+	<meta charset="UTF-8">
+	<style>
+        .wrap {
+            width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 4px ridge green;
+        }
+        input {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.container {
+			height: 250px;
+			width: 40px;
+			margin: 50px auto;
+			border: 1px solid black;
+			position: relative;
+		}
+		.totalStatus, .topPercents {
+			position: absolute;
+			width: inherit;
+			background-color: green;
+			bottom: 0;
+		}
+		.statusPercents,.topPercents {
+			background-color: orange;
+		}
+		#totalResult {
+			margin: 0 auto;
+            height: 18px;
+            width: 100px;
+		}
+	</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inputs-block">
+            <input type="range" id="range" max="100" min="1"     value="0">
+            <input type="number" id="rangeResult">
+            <input type="checkbox" id="checker">
+        </div>
+
+	    <div class="container">
+	    	<div class="topPercents" style="height:0px"></div>
+	    	<div class="totalStatus" style="height:0px"></div>
+	    </div>
+
+	    <div id="totalResult"></div>
+    </div>
+
+    <script src="4.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework video</title>
+	<meta charset="UTF-8">
+
+	<style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        video {
+            display: block;
+            width: inherit;
+        }
+        #adBlock {
+            width: 300px;
+            background: url("poster.jpg") no-repeat top/contain;
+            position: absolute;
+            right: 0;
+            bottom: 32px;
+            transition: 0.5s;
+        }
+        .hidden {
+            height: 0;
+        }
+        .shown {
+            height: 169px;
+        }
+	</style>
+</head>
+<body>
+    
+    <div class="container">
+        <video id="video" controls src="Crystallize.mp4" poster="poster.jpg"></video>
+        <div id="adBlock" class="hidden"></div>
+    </div>
+    
+    <script src="video.js"></script>
+</body>
+</html>
