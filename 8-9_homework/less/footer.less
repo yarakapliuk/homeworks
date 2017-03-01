@@ -1,0 +1,107 @@
+/***** Footer styles *****/
+
+/*general*/
+footer {
+    position: relative;
+    z-index: 10;
+    font-size: 14px;
+}
+footer .footer-wrap:nth-child(1) {
+    background-color: @main-bg;
+}
+footer .footer-wrap:nth-child(2) {
+    background: linear-gradient(90deg,#263238 50%,#37424b 50%);
+    color: @white;
+    position: relative;
+}
+footer .footer-wrap:nth-child(3) {
+    background: #455a64;
+    color: @white;
+    padding: 14px 24px;
+    .font;
+}
+/* promos */
+.promo-wrap {
+    padding: 20px 4px;
+}
+.promo {
+    width: 192px;
+    text-align: center;
+    margin: 20px;
+}
+.promo img {
+    height: 48px;
+    margin-bottom: 8px;
+}
+.promo a {
+    color: #000;
+    .font;
+}
+.promo-text {
+    margin-top: 3px;
+}
+/* linkbox */
+.linkbox {
+    width: 358px;
+    padding: 24px 40px 40px;
+    position: relative;
+    z-index: 10;
+    background-color: #263238;
+}
+.linkbox h3 {
+    font-weight: 500;
+    font-size: 14px;
+}
+.linkbox li {
+    cursor: pointer;
+    color: #cfd8dc;
+    margin: 16px 0 0;
+}
+.linkbox li:hover {
+    color: @white;
+}
+.linkbox:last-child {
+    background-color: #37424B;
+}
+.linkbox > a {
+    border-bottom: 1px solid #455a64;
+    padding: 0 0 17px 0;
+    margin: 0 0 24px 0;
+    .block;
+}
+.linkbox > a > img {
+    height: 37px;
+}
+footer select {
+    .text-transform;
+    .font;
+    .radius;
+    color: #212121;
+    font-size: 14px;
+    width: 134px;
+    padding: 7px 27px 7px 7px;
+    margin-right: 16px;
+}
+select option {
+    text-transform: none;
+    font-size: 14px;
+}
+.footer-links a {
+    color: @white;
+    .block;
+}
+.footer-links a:nth-child(2):before {
+    content: '|';
+    margin: 0 8px; 
+}
+.footer-right span {
+    margin-right: 16px;
+}
+.subscribe {
+    .border(@text-blue);
+    .radius;
+    .font;
+    background-color: @text-blue;
+    color: @white;
+    padding: 8px 16px;
+}

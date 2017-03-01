@@ -1,0 +1,122 @@
+/***** Header styles *****/
+
+header {
+    background-color: @header-blue;
+    padding: 10px 10px 0;
+    color: @white;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.header-row {
+    padding: 10px;
+}
+.image {
+    background-color: @white;
+    .radius(50%);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 40px;
+}
+img {
+    height: 26px;
+    display: block;
+    margin: 3px auto;
+}
+.breadcrumps {
+    font-size: 20px;
+}
+.breadcrumps span {
+    color: @white;
+    .transition;
+}
+.breadcrumps span:hover {
+    color: @bg-hover-blue;
+}
+input {
+    .block;
+    .radius;
+    .border(@header-blue);
+    height: 36px;
+    width: 200px;
+    padding: 8px 8px 8px 72px;
+    background-color: #4285f4;
+    color: @white;
+    .transition(.2s, ease-in);
+}
+input:hover {
+    background-color: @elems-blue;
+}
+.searchblock {
+    position: relative;
+    margin: 0 10px;
+}
+.searchblock:before {
+    content: '\F002';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    left: 35px;
+    top: 9px;
+}
+.placeholder(@white, 16px);
+.left, .right {
+    width: 50%;
+}
+.menu {
+    margin: 0 10px;
+    color: @bg-hover-blue;
+    .transition;
+}
+.menu:hover {
+    color: @white;
+}
+.user-logo {
+    width: 40px;
+    height: 40px;
+    background-color: @elems-blue;
+    .border(@elems-blue);
+    border-radius: 50%;
+    color: @header-blue;
+    overflow: hidden;
+    .transition;
+}
+.user-logo:hover {
+    color: #4a77d5;
+    background-color: @bg-hover-blue;
+}
+.header-row-nopadding {
+    padding-bottom: 0;
+}
+.issues {
+    margin-left: 15px;
+    width: 100%;
+}
+.issues li {
+    color: @bg-hover-blue;
+    padding: 0 15px 15px;
+    .text-transform;
+    .pointer;
+}
+.issues li:hover {
+    color: @white;
+}
+.issues li.active {
+    border-bottom: 3px solid @white;
+}
+.feedback {
+    .radius;
+    .border(@header-blue);
+    .font;
+    background-color: @header-blue;
+    color: @bg-hover-blue;
+    margin-top: -8px;
+    padding: 8px;
+}
+.feedback:hover {
+    color: @white;
+    background-color: #4A77D5;
+}

@@ -1,0 +1,63 @@
+/***** Content block styles *****/
+
+.content-section {
+    width: 856px;
+}
+.rating {
+    color: #bdbdbd;
+    line-height: 41px;
+}
+.rating div {
+    margin: 0 2px;
+}
+.rating div:hover {
+    .pointer;
+}
+.rating div:after {
+    content: '\F006';
+    font-family: FontAwesome;
+    font-size: 24px;
+}
+.rating div:hover:after,
+.rating div:hover ~ div:after {
+    content: '\F005';
+    color: #f57c00;
+}
+h1 {
+    color: #757575;
+    font-size: 34px;
+}
+h2 {
+    border-bottom: 1px solid #ebebeb;
+    font-size: 24px;
+    letter-spacing: -.01em;
+    margin: 40px 0 20px;
+    padding-bottom: 3px;
+}
+pre {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    background-color: @main-bg;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: 8px;
+}
+pre .red {
+    color: #c53929;
+}
+pre .blue {
+    color: #3b78e7;
+}
+pre .green {
+    color: #0d904f;
+}
+pre .purple {
+    color: #9c27b0;
+}
+pre .api-key {
+    color: #ec407a;
+    font-style: italic;
+    padding: 3px;
+    .border(#ec407a, 1px, dashed);
+    .font;
+}

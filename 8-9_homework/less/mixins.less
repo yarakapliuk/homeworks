@@ -1,0 +1,41 @@
+/***** Mixins styles *****/
+
+.block {
+	display: block;
+}
+.pointer {
+	cursor: pointer;
+}
+.text-transform {
+	text-transform: uppercase;
+}
+.radius(@radius: 3px) {
+	border-radius: @radius;
+}
+.font(@weight: bold) {
+	font-weight: @weight;
+}
+.border(@color, @size: 1px, @style: solid) {
+	border: @size @style @color;
+}
+.transition(@time: .1s, @func: ease) {
+	transition: @time @func;
+}
+.placeholder(@color, @size) {
+	input::-webkit-input-placeholder {
+		color: @color;
+		font-size: @size;
+	}
+	input::-moz-placeholder {
+		color: @color;
+		font-size: @size;
+	}
+	input:-ms-input-placeholder {
+		color: @color;
+		font-size: @size;
+	}
+	input::placeholder {
+		color: @color;
+		font-size: @size;
+	}
+}
