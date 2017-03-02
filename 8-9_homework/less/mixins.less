@@ -1,22 +1,23 @@
-/***** Mixins styles *****/
-
-.block {
-	display: block;
+.block(@block: block) {
+	display: @block;
 }
-.pointer {
-	cursor: pointer;
-}
-.text-transform {
-	text-transform: uppercase;
+.fullwidth(@width: 100%) {
+	width: @width;
 }
 .radius(@radius: 3px) {
 	border-radius: @radius;
 }
+.border(@color, @size: 1px, @style: solid) {
+	border: @size @style @color;
+}
+.text-transform(@transform: uppercase) {
+	text-transform: @transform;
+}
 .font(@weight: bold) {
 	font-weight: @weight;
 }
-.border(@color, @size: 1px, @style: solid) {
-	border: @size @style @color;
+.pointer(@cursor: pointer) {
+	cursor: @cursor;
 }
 .transition(@time: .1s, @func: ease) {
 	transition: @time @func;
@@ -38,4 +39,13 @@
 		color: @color;
 		font-size: @size;
 	}
+}
+.x(@value: hidden) {
+	overflow-x: @value;
+}
+.y(@value: hidden) {
+	overflow-y: @value;
+}
+.z(@value: 10) {
+	z-index: @value;
 }

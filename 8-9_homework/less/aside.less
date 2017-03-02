@@ -6,7 +6,7 @@
 }
 .left-menu {
     width: 256px;
-    overflow-y: hidden;
+    .y;
 }
 .right-menu {
     width: 160px;
@@ -14,56 +14,70 @@
 nav {
     width: inherit;
     position: fixed;
-    z-index: 5;
     font-size: 13px;
-}
-nav ul .nav-heading {
-    color: #757575;
-    .font;
-}
-nav ul .nav-item {
-    margin: 8px 0 0;
-}
-nav ul .nav-item span {
-    .block;
-    .pointer;
-    width: 100%;
-}
-nav ul .nav-item span:hover {
-    color: @text-blue;
+    .z(5);
+
+    ul {
+        .nav-heading {
+            color: #757575;
+            .font;
+        }
+        .nav-item {
+            margin: 8px 0 0;
+
+            span {
+                .block;
+                .pointer;
+                .fullwidth;
+
+                &:hover {
+                    color: @text-blue;
+                }
+            }
+        }
+    }
 }
 /* left nav */
-.left-menu nav {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: @main-bg;
-    padding: 16px 0;
+.left-menu {
+    nav {
+        .x;
+        .y(scroll);
+        background-color: @main-bg;
+        padding: 16px 0;
+    }
 }
-.nav-list li span {
-    padding: 0 16px;
-}
-.nav-list .nav-active {
-    .font;
-    color: @text-blue;
-    cursor: pointer;
-}
-.nav-list .nav-heading {
-    border-top: 1px solid #cfd8dc;
-    margin: 15px 0 0;
-    padding: 16px 16px 0;
-}
-.nav-list .nav-disabled,
-.nav-list .nav-disabled:hover i {
-    color: #bdbdbd;
-}
-.nav-list .nav-disabled i {
-    font-size: 18px;
-    line-height: 13px;
+.nav-list {
+    li {
+        span {
+            padding: 0 16px;
+        }
+    }
+    .nav-active {
+        .font;
+        color: @text-blue;
+        cursor: pointer;
+    }
+    .nav-heading {
+        border-top: 1px solid #cfd8dc;
+        margin: 15px 0 0;
+        padding: 16px 16px 0;
+    }
+    .nav-disabled, .nav-disabled:hover i {
+        color: #bdbdbd;
+    }
+    .nav-disabled {
+        i {
+            font-size: 18px;
+            line-height: 13px;
+        }
+    }
 }
 /* right nav */
-.right-menu nav {
-    overflow-y: hidden;
-    overflow-x: hidden;
+.right-menu {
+    nav {
+        .x;
+        .y;
+    }
 }
 .page-nav-list {
     border-left: 4px solid #4285f4;
